@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+ 
+    <item type="id" name="main_radio">false</item> 
+    <item type="id" name="radio_home">false</item> 
+    <item type="id" name="radio_msg">false</item> 
+    <item type="id" name="radio_more">false</item> 
+    <item type="id" name="radio_search">false</item> 
+    <item type="id" name="radio_menu">false</item> 
+    <item type="id" name="radio_selfinfo">false</item> 
+ 
+</resources> 

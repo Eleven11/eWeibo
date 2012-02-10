@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"> 
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" /> 
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" /> 
+            <RadioGroup  
+                android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_radio" android:background="@null"  
+                android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+                <RadioButton  android:id="@id/radio_home" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_home" android:text="@string/main_home"  style="@style/main_tab_bottom" /> 
+                <RadioButton  android:id="@id/radio_msg" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_meassage" android:text="@string/main_news" style="@style/main_tab_bottom" /> 
+                <RadioButton  android:id="@id/radio_selfinfo" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_selfinfo" android:text="@string/main_selfinfo" style="@style/main_tab_bottom" /> 
+                <!-- <RadioButton  android:id="@id/radio_search" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_search_nor" android:text="@string/main_search" style="@style/main_tab_bottom" />  -->
+                <!-- <RadioButton  android:id="@id/radio_more" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_more" android:text="@string/more"  style="@style/main_tab_bottom" />  -->
+           		<RadioButton  android:id="@id/radio_menu" android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_square" android:text="@string/main_menu" style="@style/main_tab_bottom" /> 
+                
+            </RadioGroup> 
+    </LinearLayout> 
+</TabHost>

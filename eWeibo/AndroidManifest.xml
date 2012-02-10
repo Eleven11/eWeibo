@@ -10,14 +10,40 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".EWeiboActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
+            android:label="@string/app_name"
+            android:name=".EWeiboActivity" >
+            <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:launchMode="singleTask"
+            android:name=".RegisterActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="RegisterActivity"
+                    android:scheme="eweibo" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MsgActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".SelfInfoActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MoreActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -2,6 +2,13 @@
 <resources>
 
     <string name="hello">Hello World, EWeiboActivity!</string>
-    <string name="app_name">EWeibo</string>
+    <string name="app_name">E围脖</string>
+    <string name="main_news">消息</string>
+    <string name="main_home">首页</string>
+    <string name="main_msg">消息</string>
+    <string name="main_menu">菜单</string>
+    <string name="main_search">查找</string>
+    <string name="main_selfinfo">个人</string>
+    <string name="more">更多</string>
 
 </resources>

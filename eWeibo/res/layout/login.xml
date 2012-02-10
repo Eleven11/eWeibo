@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:contentDescription="@string/app_name"
+        android:src="@null" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/iconBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/selectLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:background="@null" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name" >
+            </ImageView>
+        </RelativeLayout>
+
+            
+        <RelativeLayout
+            android:id="@+id/selectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <EditText
+                android:id="@+id/selectedUserName"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name"
+                android:editable="false"
+                android:enabled="false"
+                android:gravity="center_vertical|left"
+                android:hint="@string/app_name"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="20dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/selectedUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:text=""
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/switchuserButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/selectedUserName"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:contentDescription="@string/app_name" >
+            </ImageButton>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/selectedUserName"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_horizontal|fill_vertical"
+                android:text="登录"
+                android:textSize="20dp" >
+            </Button>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
