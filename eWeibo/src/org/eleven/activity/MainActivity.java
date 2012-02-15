@@ -50,6 +50,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		initIntent();
 	}
 
+	
 	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		if (isChecked) {
